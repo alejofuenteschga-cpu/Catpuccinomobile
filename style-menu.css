@@ -1,0 +1,126 @@
+/* ======== ESTILOS DEL MENÚ ======== */
+
+/* Contenedor principal */
+.menu {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Encabezado del menú */
+.menu h2 {
+  text-align: center;
+  color: rgb(56, 32, 12);
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.menu p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Secciones dentro del menú */
+.menu section {
+  margin-bottom: 40px;
+}
+
+.menu h3 {
+  color: rgb(56, 32, 12);
+  font-size: 1.5em;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+/* Lista de productos */
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.menu li span:first-child {
+  flex: 1;
+  color: #333;
+}
+
+.precio {
+  font-weight: bold;
+  color: rgb(56, 32, 12);
+}
+
+/* ======== FOOTER ======== */
+footer {
+  text-align: center;
+  background: #fff;
+  padding: 15px 0;
+  margin-top: 40px;
+  border-radius: 10px 8px 0 0;
+}
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 768px) {
+  .menu {
+    max-width: 100%;
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .menu h2 {
+    font-size: 1.6rem;
+  }
+
+  .menu h3 {
+    font-size: 1.3rem;
+  }
+
+  .menu li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .precio {
+    align-self: flex-end;
+  }
+
+  footer {
+    font-size: 0.9em;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu {
+    padding: 15px;
+  }
+
+  .menu h2 {
+    font-size: 1.4rem;
+  }
+
+  .menu h3 {
+    font-size: 1.2rem;
+  }
+
+  .menu li span:first-child {
+    font-size: 0.95em;
+  }
+
+  .precio {
+    font-size: 0.9em;
+  }
+}

@@ -1,0 +1,219 @@
+/* ======== RESET BÁSICO ======== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ======== BODY ======== */
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* 🔝 Barra de navegación */
+.navbar {
+  background: rgb(244,228, 202);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgb(56, 32, 12);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: rgb(56, 32, 12);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ffeaa7;
+}
+
+/* Menú hamburguesa para móviles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background: rgb(56, 32, 12);
+  margin: 3px 0;
+  transition: 0.3s;
+}
+
+/* ======== HEADER ======== */
+header {
+  background: rgb(244,228, 202);
+  color: rgb(56, 32, 12);
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+/* ======== MENÚ ======== */
+nav {
+  background: #333;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px;
+  display: block;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background: #555;
+  border-radius: 5px;
+}
+
+/* ======== SECCIONES ======== */
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+main h2 {
+  margin-bottom: 15px;
+  color: rgb(56, 32, 12);
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+main p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* ======== FOOTER ======== */
+footer {
+  text-align: center;
+  background: #222;
+  color: #fff;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+/* ======== RESPONSIVE PARA MÓVILES ======== */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 15px;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: rgb(244,228, 202);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  main {
+    max-width: 100%;
+    margin: 20px;
+    padding: 15px;
+  }
+
+  main h2 {
+    font-size: 1.5rem;
+  }
+
+  main p {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    padding: 10px 0;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 8px 10px;
+  }
+
+  .logo {
+    font-size: 1.2em;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  main {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  footer {
+    padding: 8px 0;
+    font-size: 0.7rem;
+  }
+}

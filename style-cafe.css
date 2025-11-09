@@ -1,0 +1,119 @@
+/* === Estilos generales === */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(244, 228, 202);
+}
+
+/* Quitar subrayado a los enlaces */
+a {
+  text-decoration: none;
+  color: rgb(56, 32, 12);
+}
+
+/* === Título principal === */
+h1 {
+  text-align: center;
+  font-size: 1.8em;
+  color: rgb(56, 32, 12);
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+/* === Imagen principal === */
+.wrap-img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  margin: 20px auto 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.img-cafe {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+}
+
+/* === Caja flotante del texto === */
+.wrap {
+  background-color: #ffffff;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.wrap h2 {
+  font-size: 1.6em;
+  color: #6d4c41;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.wrap p {
+  text-align: justify;
+  color: rgb(56, 32, 12);
+  line-height: 1.7;
+  font-size: 1rem;
+  word-break: normal;
+  overflow-wrap: break-word;
+  hyphens: none; /* evita guiones automáticos */
+}
+
+/* === Botón Volver al inicio === */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.back-button {
+  background-color: rgba(244, 228, 202, 0.95);
+  color: rgb(56, 32, 12);
+  padding: 10px 20px;
+  border: 1px solid rgb(56, 32, 12);
+  border-radius: 18px;
+  font-weight: 600;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: rgb(56, 32, 12);
+  color: rgb(244, 228, 202);
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5em;
+    margin: 15px;
+  }
+
+  .wrap {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .wrap h2 {
+    font-size: 1.3em;
+  }
+
+  .wrap p {
+    font-size: 0.95em;
+  }
+
+  .back-button {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+}
